@@ -7,7 +7,7 @@ import sys
         lvdaxianer
 """
 def add_logging_config():
-    format = "{time} {name} {level} {message}"
+    format = "{time: YYYY-MM-dd hh:mm:ss} {name} {level} {message}"
     level = "DEBUG"
 
     ## 这里文件输出
