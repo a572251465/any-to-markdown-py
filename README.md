@@ -9,6 +9,7 @@ Convert any document into a markdown document based on a large model
 - [ ] Multiple Agent tasks to be executed
 - [ ] pdf -> image
 - [ ] image -> markdown
+- [ ] pdf + image -> markdown
 - [ ] text -> markdown
 - [ ] word -> markdown
 - [ ] xlsx -> markdown
