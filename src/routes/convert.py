@@ -1,6 +1,7 @@
 from fastapi import APIRouter
 from ..models import ResponseModel
 from pydantic import BaseModel
+from ..parser import discover_parser
 
 ## body 请求体
 class PathModel(BaseModel):
@@ -18,4 +19,5 @@ router = APIRouter(prefix="/convert")
 """
 @router.post("/byPath")
 async def convert_markdown_by_path(item: PathModel) -> 'ResponseModel':
-    return ResponseModel.ok(data="")
+    response = discover_parser.invoke({"file_path": item.path})
+    return ResponseModel.ok(data=response)
