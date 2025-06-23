@@ -1,6 +1,8 @@
 .vscode
 .venv
 .env
+build
+any_to_markdown_py.egg-info
 
 info**.log
 error**.log
